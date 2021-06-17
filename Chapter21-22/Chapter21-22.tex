@@ -70,7 +70,7 @@
 
 \tableofcontents
 
-\section*{21. Electric Charge and Electric Field}
+\section*{21 Electric Charge and Electric Field}
 Electromagnetic interactions involve particles that have electric charge, 
 an attribute that is as fundamental as mass. Just as objects with mass are 
 accelerated by gravitational forces, so electrically charged objects are 
@@ -166,15 +166,16 @@ accelerated by electric forces.
 
 \subsection*{21.3 Coulomb's Law}
 \begin{definition}:
-    \textbf{Point Charges}: Simple charged bodies whose mass is irrelevant.
+    \textbf{Point Charges}:
+    Simple charged bodies whose mass is irrelevant.
 \end{definition}
 
 \begin{theorem}
     \underline{Coulomb's Law}: The magnitude of the electric force between two 
-    point charges is directly pro- portional to the product of the charges and
+    point charges is directly proportional to the product of the charges and
     inversely proportional to the square of the distance between them.
-    In mathematical terms shown as $F=k\frac{|q_1*q_2|}{r^2}$ 
-    where the coulomb constant k = $8.987551787*10^9 N \cdot m/C^2$ oand can 
+    In mathematical terms shown as $$F=k\frac{|q_1*q_2|}{r^2}$$ 
+    where the coulomb constant k = $8.987551787*10^9 N \cdot m/C^2$ and can 
     also be described in SI units as $\frac{1}{4\pi\epsilon_0}$.
 \end{theorem}
 
@@ -193,8 +194,9 @@ accelerated by electric forces.
 \subsection*{21.4 Electric Field and Electric Forces}
 
 \begin{definition}
-    \textbf{Electric Field}: The intermediary through which charges interact. 
-    The equation to find the strength of an electric field is $|E| = \frac{1}{4\pi\epsilon_0}\frac{q}{r^2}$
+    \textbf{Electric Field}:
+    The intermediary through which charges interact. 
+    The equation to find the strength of an electric field is $$|E| = \frac{1}{4\pi\epsilon_0}\frac{q}{r^2}$$
     where the sign relates to the direction of the field.
     \begin{remark}
         The electric force on a charged body is exerted by the electric field 
@@ -224,7 +226,8 @@ accelerated by electric forces.
 
 \subsection*{21.6 Electric Field Lines}
 \begin{definition}
-    \textbf{Electric Field Line}: An imaginary line demonstrating direction of 
+    \textbf{Electric Field Line}:
+    An imaginary line demonstrating direction of 
     electric field |E| vector at point and the density of lines shows magnitude.
 \end{definition}
 
@@ -238,7 +241,8 @@ accelerated by electric forces.
 \subsection*{21.7 Electric Dipoles}
 
 \begin{definition}
-    \textbf{Electric Dipole}: A pair of point charges with equal magnitude and 
+    \textbf{Electric Dipole}:
+    A pair of point charges with equal magnitude and 
     opposite sign (a positive charge q and a negative charge -q) separated by a
      distance d.
 \end{definition}
@@ -246,22 +250,98 @@ accelerated by electric forces.
 \subsubsection*{21.7.1 Force and Torque on an Electric Dipole}
 
 \begin{definition}
-    \textbf{Electric Dipole Moment}: A measure of the system's overall polarity,
-    can be calculated using $ p = qd$ where q is charge and d is seperation.
+    \textbf{Electric Dipole Moment}:
+    A measure of the system's overall polarity,
+    can be calculated using $$p = qd$$ where q is charge and d is seperation.
     Direction of p is from negative to positive
 \end{definition}
 
 \begin{definition}
-    \textbf{Torque on an Electric Dipole}: Because the point charges may not be
-    parallel, a torque exists and can be found through the equation $\tau = pEsin\phi$
+    \textbf{Torque on an Electric Dipole}:
+    Because the point charges may not be
+    parallel, a torque exists and can be found through the equation $$\tau = pEsin\phi$$
     where p is the dipole moment and $\phi$ is the angle between the dipole moment and E
 \end{definition}
 
 \begin{definition}
-    \textbf{Potetial Energy of an Electric Dipole}: Because there is work being
+    \textbf{Potetial Energy of an Electric Dipole}:
+    Because there is work being
     there is a change in potential energy and we can find this through the equation
-    $U =-p\cdot E$ or as $U = pEcos\phi$ 
+    $$U =-p\cdot E = pEcos\phi$$ 
 \end{definition}
+
+\section*{22 Gauss's Law}
+ Here’s what Gauss’s law is all about. Given any general distribution of charge,
+ we surround it with an imaginary surface that encloses the charge. Then we 
+ look at the electric field at various points on this imaginary surface. 
+ Gauss’s law is a relationship between the field at all the points on the 
+ surface and the total charge enclosed within the surface.
+
+ \begin{definition}
+    \textbf{Closed Surface}:
+    An essential part of making a calculation of flux,
+    The shape must entirely enclose a volume to calculate Gauss's Law.
+\end{definition}
+
+
+ \subsection*{22.1 Charge and Electric Flux}
+
+\begin{definition}
+    \textbf{Electric Flux}: 
+    the rate of flow of the electric field through 
+    a given area. Electric flux is proportional to the number of 
+    electric field lines going through a virtual surface. Independent of size.
+
+    \begin{remark}
+        Positive charge inside the box goes with an outward electric flux 
+        through the box’s surface, and negative charge inside goes with an 
+        inward electric flux. If there is no charge, neto zero charge, or the 
+        same flux in and out there is no electrix flux. 
+    \end{remark}
+\end{definition}
+
+\subsection*{22.2 Calculating Electric Flux}
+
+\begin{definition}
+    \textbf{Flux of Uniform Electric Field}:
+    Flux exists as the overlap of the
+    electric field and the surface. Mathematically it is expressed as 
+    $$\Phi_E = EAcos\phi$$ where $\phi$ is the vertical angle normal to the surfaces.
+\end{definition}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=5in]{Media/Uniformflux.png}
+    \caption{Uniform Flux}
+    \label{Uniform Flux}
+\end{figure}
+
+\begin{definition}
+    \textbf{Flux of Nonuniform Electric Field}:'
+    To find the flux of a varying electric field or on a curved survace we must
+    find the surface integral by finding an infintesimal dA.For this case the 
+    equation morphs to $$\Phi_E = \int EAcos\phi dA = \int E \cdot dA$$ where 
+    $\phi$ is again the vertical angle normal to surface and A is surface area.
+\end{definition}
+
+\subsection*{22.3 Gauss's Law}
+
+\begin{theorem}
+    \underline{Gauss's Law}:
+    An alternative to Coulomb's Law, Gauss's law states the total electric flux
+    through a closed surface is proportional to total net electric charge. The
+    complete relation can be read as 
+    $$\Phi_E = \int EA cos\phi = \frac{1}{4\pi \epsilon_0} \frac{q}{R^2}(4\pi R^2) = \frac{q}{\epsilon_0}$$
+    for a sphere, noting that flux is independent of Radius, only charge $q$
+
+
+    \begin{remark}
+        General Form of Gauss's Law can be expressed as The total electric 
+        flux through a closed surface is equal to the total (net) electric 
+        charge inside the surface, divided by $\epsilon_0$, or in equation form 
+        $$\Phi_E = \frac{Q_encl}{\epsilon_0}$$
+    \end{remark}
+\end{theorem}
 
 
 \end{document}
