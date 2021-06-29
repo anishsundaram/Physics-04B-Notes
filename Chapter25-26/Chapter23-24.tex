@@ -70,8 +70,150 @@
 
 \tableofcontents
 
-\section*{25 Current, resistance, and electromotive Force}
+\section*{25 Current, Resistance, and Electromotive Force}
+
+This chapter involves electric charges \textit{in motion} rather than static as before
+An \textit{electric current} consists of charges in motion from one region to another. 
+If the charges follow a conduct- ing path that forms a closed loop, the path is called an \textit{electric circuit.}
 
 
+\subsection*{25.1 Current}
+ \begin{definition}
+    \textbf{Current ($I$)}:
+    Any motion of charge from one region to another and is induced by the 
+    ability of electrons to freely move. Current is zero everywhere in electrostatics.
+    Current can be defined as $$I = \frac{dQ}{dt}$$ where Q is Coulombs and 
+    its unit is Amperes(1 A = 1 C/s). Because Current is a scalar it must be 
+    accompanied by a statement of direction: "25 Amps in the clockwise direction"
+    
+    \begin{remark}
+        We define the current, denoted by $I$, to be in the direction 
+    in which there is a flow of positive charge and describe currents as 
+    though they consisted entirely of positive charge flow, even in cases 
+    in which we know that the actual current is due to electrons.
+    \end{remark}
+ \end{definition}
+
+ \begin{figure}[H]
+    \centering
+    \includegraphics[width=5in]{Media/Current.png}
+    \caption{Current Flow Diagram}
+    \label{Current Flow Diagram}
+\end{figure}
+
+
+ \begin{definition}
+    \textbf{Drift Velocity ($v_d$)}:
+    The average velocity of charged particles moving in the direction of the 
+    electric force $\vec{F} = q\vec{E}$, though individual charge path is random. 
+    This value gives us an alternate calculation of $I$ of 
+    $$I = nqv_dA$$ where n is concentration of particles, q is unit charge and A is area.
+ \end{definition}
+
+ \subsubsection*{25.1.1 Direction of Current Flow}
+
+\begin{remark}
+    Different current-carrying materials may have differently charged moving particles
+    In metals the moving charges are always electrons, while in an ionized gas (plasma) or an ionic 
+    solution the moving charges may include both electrons and positively charged ions.
+    In a semiconductor conduction is partly by electrons and partly by motion 
+    of \textit{vacancies}, also known as holes; these are sites of missing electrons 
+    and act like positive charges.
+\end{remark}
+
+\subsubsection*{25.1.2 Current Density}
+
+\begin{definition}
+    \textbf{Current Density (J)}:
+
+   The current per unit cross-section area or $$J = I/A = nqv_d$$ where n is charge concentration, 
+   q is the charge per particle and $v_d$ is the drift velocity.
+\end{definition}
+
+\subsection*{25.2 Resistivity}
+
+\begin{theorem}
+    \underline{Ohm's Law}:
+    A relationship in an idealized model that states that the ratio of the electric
+    field and the current density is constant in metals at a given temperature, and this is known
+    as Resistivity.
+\end{theorem}
+
+\begin{definition}
+    \textbf{Resistivity ($\rho$)}:
+    The permitivity of electrons to move freely in a material, linked with resistance.
+    Resistivity is defined as $$ \rho = \frac{E}{J}$$ where E is the magnitude 
+    of the electric field and J is the current density. unit is ohm-meters(1 $\Omega \cdot m =V \cdot m/A$)
+    Good insulators have high resistivity and conductors have low Resistivity.
+
+    Resistivity can also be calculated as a function of Temperature:
+    $$\rho(T) = \rho_0[1+\alpha(T-T_0)]$$ where $\alpha$ is a temperature 
+    coefficient of resistivity and  $\rho_0$ being the Resistivity at a reference temperature $T_0$
+\end{definition}
+
+\begin{definition}
+    \textbf{Conductivity}:
+    The recipprocal of resistivity whose units are $(\Omega \cdot m)^{-1}$ Good conductors
+    obviously have high Conductivity.
+\end{definition}
+
+\begin{definition}
+    \textbf{Semiconductor}:
+    Materials with propertis intermediate of metals and insulators, whose 
+    resistivity is likewise between these two groups.
+\end{definition}
+
+\begin{remark}
+    A material that obeys Ohm’s law reasonably well is called an \textit{ohmic 
+    conductor} or a \textit{linear conductor}, those that dont are \textit{nonohmic}, 
+    or \textit{nonlinear}. In the latter materials, J depends on E in a more complicated manner.
+\end{remark}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=5in]{Media/Resistivity.png}
+    \caption{Resistivity Across Material Types}
+    \label{Resistivity Across Material Types}
+\end{figure}
+
+\subsection*{25.3 Resistance}
+
+\begin{definition}
+    \textbf{Resistance ($R$)}:
+    The ratio of Potential Difference V to Current I for a particular conductor.
+    Resistance measures the opposition to current flow in an electrical circuit.
+    The resistance of a conductor can be calculated by the equation
+    $$R = \frac{\rho L}{A} = \frac{V}{I}$$ and its unit is Ohm (1 $\Omega = 1V/A$)
+    and similar to resistivity can be ade a function of Temperature:
+    $$R(T) = R_0[1+\alpha(T-T_0)]$$
+\end{definition}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=5in]{Media/Resistor.png}
+    \caption{Labeling Guide for Resistors}
+    \label{Labeling Guide for Resistors}
+\end{figure}
+
+\subsection*{25.4 Electromotive Force and Circuits}
+
+\begin{definition}
+    \textbf{Electromotive Force ($\mathcal{E}$)}:
+    In an electric circuit there must be a device somewhere in the loop that 
+    acts like the water pump in a water fountain. This pumping action is called 
+    Electromotive Force or emf and the device is called a source of emf. This is not actually
+    a force but a energy-per-unit-charge and thus has the unit Volt (1 V = 1 J/C).
+
+    Emf can be calculated in multiple ways:
+    $$\mathcal{E} = V_{ab} = IR $$ for ideal sources and where $V_{ab}$ is the Terminal Voltage
+    or $$\mathcal{E} = V_{ab} + Ir$$ for when there is internal resistance (r).
+\end{definition}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=5in]{Media/Circuit.png}
+    \caption{Table of Circuit Labels}
+    \label{Table of Circuit Labels}
+\end{figure}
 
 \end{document}
