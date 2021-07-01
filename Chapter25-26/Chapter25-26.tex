@@ -220,7 +220,7 @@ If the charges follow a conduct- ing path that forms a closed loop, the path is 
 \subsection*{25.5 Energy and Power in Electric Circuits}
 
 \begin{definition}
-    \textbf{Power ($P$)}:
+    \textbf{Power($P$)}:
     the rate, per unit time, at which electrical energy is transferred in or out of
     an electric element. Power can be found by the following equations:
     $$ P = V_{ab}I = I^2R = \frac{V_{ab}^2}{R} = \mathcal{E}I-I^2r $$
@@ -236,5 +236,168 @@ If the charges follow a conduct- ing path that forms a closed loop, the path is 
 \end{definition}
 
 \section*{26 Direct-Current Circuits}
+Our principal concern in this chapter is with \textit{direct-current (dc}) circuits, 
+in which the direction of the current does not change with time. Larger appliances
+and household equipment use \textit{alternating current (ac)}, in which the current oscillates back and forth.
+
+\subsection*{26.1 Resistors in Series and Parallel}
+
+\begin{definition}
+    \textbf{Series Circuit}:
+    When circuit elements are connected in sequence with a single current path 
+    between points. In a Series Circuit Capacitors all have the same \textit{Capacitance}
+\end{definition}
+
+\begin{definition}
+    \textbf{Parallel Circuit}:
+    An arrangement where each resistor provides an alternate path between the points. 
+    For elements connected in parallel the potential differences is the same across each element.
+\end{definition}
+
+
+\begin{definition}
+    \textbf{Equivalent Resistance}:
+    The total resistance of a circuit equal to the sum of its parts.
+    Equivalent Resistance differes depending on configuration.
+    \begin{enumerate}
+        \item For Resistors in Series: $R_{eq} = R_1 + R_2 + ..$
+        \item For Resistors in Parallel: $\frac{1}{R_{eq}} = \frac{1}{R_1} + \frac{1}{R_2} + ..$
+    \end{enumerate}
+    \begin{remark}
+        The equivalent resistance of a series combination equals the sum of 
+        the individual resistances. The equivalent resistance is greater 
+        than any individual resistance.The reciprocal of the equivalent 
+        resistance of a parallel combination equals the sum of the reciprocals 
+        of the individual resistances. The equivalent resistance is always 
+        less than any individual resistance.
+    \end{remark}
+\end{definition}
+
+\subsection*{26.2 Kirschoff's Rules}
+
+\begin{definition}
+    \textbf{Junction}:
+    A junction in a circuit is a point where three or more conductors meet.
+\end{definition}
+
+\begin{definition}
+    \textbf{Loop}:
+    A loop is any closed conducting path in a circuit, including the circuit itself.
+\end{definition}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=3in,scale=0.25]{Media/Junctionloop.png}
+    \caption{Example of Junctions and Loops}
+    \label{Example of Junctions and Loops}
+\end{figure}
+
+\begin{definition}
+    \textbf{Kirschoff's Junction Rule}:
+    The sum of the currents into any junction is 0, or in other words the current
+    that flows in a junction must equal the current flowing out the junction.
+    $$\Sigma I =0$$
+    This is valid at any junction.
+\end{definition}
+
+\begin{definition}
+    \textbf{Kirschoff's Loop Rule}:
+    The sum of the potential differences around any loop must equal 0, or in other 
+    words the sum voltage at the end of a circuit or loop must equal 0.
+    $$\Sigma V =0$$
+    This is valid at any closed loop.
+\end{definition}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=5in,scale=0.25]{Media/Loopsign.png}
+    \caption{Picking a sign for loops}
+    \label{Picking a sign for loops}
+\end{figure}
+
+\subsection*{26.3 Electrical Measuring Instruments}
+
+\begin{definition}
+    \textbf{d’Arsonval galvanometer}:
+    Tool used to measure potential difference, current, or resistance by evaluating
+    the torque caused by the magnetic field on a coil by current.For a larger 
+    current range, a shunt resistor is added, so some of the current bypasses the meter coil, 
+    and this makes an ammeter. If materials are ohmic the ammeter can be converted toa voltmeter
+\end{definition}
+
+\begin{remark}
+    Ammeters should be placed in series with resistors to measure current due to 
+    having little resistance and thus drawing current. Voltmeters should be attatched
+    in parallel as they have very high resistance and thus can block current Flow
+    if attatched in series.
+\end{remark}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=3in,scale=0.25]{Media/galvano.png}
+    \caption{Example of d’Arsonval galvanometer}
+    \label{Example of d’Arsonval galvanometer}
+\end{figure}
+
+
+\subsection*{26.4 R-C Circuits}
+
+\begin{definition}
+    \textbf{R-C Circuit}:
+    A circuit containing resistors and capacitors in series with an ideal battery
+    and ideal wires. In these circuits we take into consideration time to charge 
+    a capacitor, as time is not constant. For these situations use the following
+    equations:
+    \begin{enumerate}
+        \item For Charge: $$q = C\mathcal{E}(1-e^{-t/RC}) = Q_f(1-e^{-t/RC})$$
+        Where $t$ is time since switch closed and $Q_f$ is final capacitor charge =$C\mathcal{E}$
+        \item For Current: $$i = \frac{dq}{dt} = \frac{\mathcal{E}}{R}e^{-t/RC} = I_0e^{-t/RC}$$
+        Where $t$ is time since switch closed and $I_0$ is initial current charge =$\mathcal{E}/R$
+        \begin{remark}
+            Variables are in lower case to distinguish they are time-varying quantities
+            and seperate from their constant capitalized counterparts.
+        \end{remark}
+    \end{enumerate}
+\end{definition}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=5in]{Media/Charging.png}
+    \caption{Capacitor Charging Curve}
+    \label{Capacitor Chargeing Curve}
+\end{figure}
+
+\subsubsection*{26.4.1 Time Constant}
+
+\begin{definition}
+    \textbf{Time Constant ($\tau$)}:
+    A time constant is the time equal to RC or the time at which the current has decreased
+    to 1/e its original value and the capacitor has reached (1-1/e) its final value $Q_f = C\mathcal{E}$
+    It is thus a measure of how quickly a capacitor charges. It can be calculated with $$\tau = RC$$
+    The unit for $\tau$ is seconds ($1 s = 1 F \cdot C$)
+    \begin{remark}
+        When $\tau$ is small, the capacitor charges quickly; 
+        when it is larger, the charging takes more time.
+    \end{remark}
+
+\end{definition}
+
+\subsubsection*{26.4.2 Discharging a Capacitor}
+
+\begin{remark}
+    The functions for discharging a Capacitor are the same as for charging except
+    that the sign of current is opposite as current is flowing out
+    \item For Charge: $$q = Q_f(1-e^{-t/RC})$$
+        Where $t$ is time since switch closed and $Q_f$ is initial capacitor charge =$C\mathcal{E}$
+        \item For Current: $$i = \frac{dq}{dt} = -\frac{{Q_0}}{RC}e^{-t/RC} = I_0e^{-t/RC}$$
+        Where $t$ is time since switch closed and $I_0$ is initial current charge =$-Q_0/RC$
+\end{remark}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=3in,scale=0.25]{Media/Discharging.png}
+    \caption{Capacitor Discharging Curve}
+    \label{Capacitor Discharging Curve}
+\end{figure}
 
 \end{document}
