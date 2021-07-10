@@ -263,12 +263,102 @@ whether they are moving or not, magnetic forces act only on \textit{moving charg
     \textbf{The Hall Effect}:
     A potential difference perpendicular to the direction of current in a conductor, when the conductor is placed in a magnetic field. The Hall potential is determined by the requirement that the associated electric field must just balance the magnetic force on a moving charge. Hall-effect measurements can be used to determine the sign of charge carriers and their concentration n. 
     $$nq=\frac{-J_xB_y}{E_z}$$ where $J_x$ is the current density or $I/A$
-
-
 \end{definition}
 
 
 \section*{28 Sources of Magnetic Field}
+We’ve learned that a charge creates an electric field and that an electric field exerts a force on a charge. But a magnetic field exerts a force on only a moving charge. Similarly, we’ll see that only moving charges create magnetic fields. We’ll begin our analysis with the magnetic field created by a single moving point charge. We can use this analysis to determine the field created by a small segment of a current-carrying conductor. Once we can do that, we can in principle find the magnetic field produced by any shape of conductor.
+
+\subsection*{28.1 Magnetic Field of a Moving Charge}
+
+\begin{definition}
+    \textbf{Magnetic Field due to moving point charge}:
+    Using the equations we derived for electric fields we can create a formula
+    to find $\vec{B}$ by using a vector product of magnitude and direction:
+    $$\vec{B} = \frac{\mu_0}{4\pi}\frac{q\vec{v}\times \hat{r}}{r^2}$$
+    where $\mu_0$ is the magnetic constant and $\hat{r}$ is the unit vector from the point charge towards the measure point.
+\end{definition}
+
+\subsection*{28.2 Magnetic Field of a Current Element}
+\begin{theorem}
+    \underline{Principle of Superposition of Magnetic Fields}:
+    The total magnetic field caused by several moving charges is the vector sum of the fields caused by the individual charges.
+\end{theorem}
+
+\begin{definition}
+    \textbf{Law of Biot-Savart}:
+    A method of finding the total magnetic field $\vec{B}$ at any point in space due to the current in a complete circuit. We can find the magnetic field in an infinitesmal current element using this equation:
+    $$d\vec{B}= \frac{\mu_0}{4\pi} \frac{Id\vec{l}\times\hat{r}}{r^2}$$ and then integrate this equation over all segments $d\vec{l}$ for a complete circuit, resulting in:
+    $$d\vec{B}= \frac{\mu_0}{4\pi} \int \frac{Id\vec{l}\times\hat{r}}{r^2}$$
+\end{definition}
+
+\subsection*{28.3 Magnetic Field of a Straight Current-Carrying Conductor}
+
+\begin{definition}
+    \textbf{Magnetic Field of a current-carrying wire}:
+    Integrating over a straight line means we can simplify our previous equation into a simpler form of $$B = \frac{\mu_0I}{2\pi r}$$
+\end{definition}
+
+\subsection*{28.4 Force between Parallel Conductors}
+
+\begin{remark}
+    Current-carrying wires each produce their own magnetic field, and these fields can interact with other nearby wires. Each conductor lies in the magnetic field set up by the other, so each experiences a force.
+\end{remark}
+
+\begin{definition}
+    \textbf{Force per unit length between 2 wires}:
+    Using our knowledge that $F_B = IlB$ and the equation for a magnetic field around a wire $B = \frac{\mu_0I}{2\pi r}$, we can substitute for a new equation of the force between 2 wires: 
+    $$\frac{F}{L} = \frac{\mu_0 I I^{'}}{2\pi r}$$
+    where $I$ is the first current, $I^{'}$ is the second current and $r$ is the distance between the 2 wires.
+\end{definition}
+
+
+\begin{definition}
+    \textbf{Ampere($A$)}:
+    One ampere is that unvarying current that, if present in each of two parallel conductors of infinite length and one meter apart in empty space, causes each conductor to experience a force of exactly $2\times 10^{-7}$ newtons per meter of length.
+\end{definition}
+
+\subsection*{28.5 Magnetic Field of a Circular Current Loop}
+
+\begin{definition}
+    \textbf{Magnetic field on axid of a circular wire}:
+    Similar to the interactions discussed about electric fields, the strength of the field a certain point on axis from a circular wire can b expressed as the integration of the horizontal force at all points across the circular wire as the vertical components cancel out. Thus we get $$B_x = \int \frac{\mu_0I}{4\pi}\frac{adl}{(x^2+a^2)^{\frac{3}{2}}} =\frac{\mu_0Ia^2}{2(x^2+a^2)^{\frac{3}{2}}}$$
+    where $x$ is the distance along the axis from the loop's center to the field point and $a$ is the radius of the loop.
+\end{definition}
+
+\subsubsection*{28.5.1 Magnetic Field on the Axis of a Coil}
+
+\begin{definition}
+    \textbf{Magnetic field at center of N wire loops}:
+    Imagining that instead of a single loop there is a coil, we get an $N$ amount of wire loops which generate their own field with only an x-component, leaving the result of $$B_x = \frac{\mu_0NI}{2a}$$
+    where $N$ is the number of loops and $r$ is the radius. If we know the magnetic total magnetic moment $\mu = N\cdot I\pi a^2$ we can substitute into the previous equation to get 
+    $$B_x = \frac{\mu_0 \mu}{2\pi(x^2+a^2)^{\frac{3}{2}}} $$
+\end{definition}
+
+\subsection*{28.6 Ampere's Law}:
+For any closed loop path, the sum of the length elements times the magnetic field in the direction of the length element is equal to the permeability times the electric current enclosed in the loop. Put into an equation as 
+$$\oint\vec{B} \cdot d\vec{l} = \mu_0I_{encl}$$ where $I_{encl}$ is the net current cnlosed by path.
+
+\begin{remark}
+    if $\oint\vec{B} \cdot d\vec{l} = 0$ it does not mean that $\vec{B} = 0$  everywhere along the path,only that the total current through an area bounded by the path is zero.
+\end{remark}
+
+\subsection*{28.7 Applications of Ampere's Law}
+
+\begin{definition}
+    \textbf{Magnetic Fields due to Current Distributions}:
+\end{definition}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=6.5in]{Media/table.png}
+    \caption{Applications of Ampere's Law}
+    \label{Applications of Ampere's Law}
+\end{figure} 
+
+\subsection*{28.8 Magnetic Materials}
+
+
+
 
 
 
