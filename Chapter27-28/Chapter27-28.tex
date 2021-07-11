@@ -310,6 +310,9 @@ We’ve learned that a charge creates an electric field and that an electric fie
     Using our knowledge that $F_B = IlB$ and the equation for a magnetic field around a wire $B = \frac{\mu_0I}{2\pi r}$, we can substitute for a new equation of the force between 2 wires: 
     $$\frac{F}{L} = \frac{\mu_0 I I^{'}}{2\pi r}$$
     where $I$ is the first current, $I^{'}$ is the second current and $r$ is the distance between the 2 wires.
+    \begin{remark}
+        If the wires are in the same direction the force is attractive, else repulsive.
+    \end{remark}
 \end{definition}
 
 
@@ -330,9 +333,17 @@ We’ve learned that a charge creates an electric field and that an electric fie
 
 \begin{definition}
     \textbf{Magnetic field at center of N wire loops}:
-    Imagining that instead of a single loop there is a coil, we get an $N$ amount of wire loops which generate their own field with only an x-component, leaving the result of $$B_x = \frac{\mu_0NI}{2a}$$
-    where $N$ is the number of loops and $r$ is the radius. If we know the magnetic total magnetic moment $\mu = N\cdot I\pi a^2$ we can substitute into the previous equation to get 
+    Imagining that instead of a single loop there is a coil, we get an $N$ amount of wire loops which generate their own field with only an x-component, leaving the result of $$B_x = \frac{\mu_0NI}{2r}$$
+    where $N$ is the number of loops and $r$ is the radius. 
+    If the length of the solenoid is known we can use the equation
+    $$B_x =\frac{\mu_0NI}{l}$$
+    
+    If we know the magnetic total magnetic moment $\mu = N\cdot I\pi a^2$ we can substitute into the previous equation to get 
     $$B_x = \frac{\mu_0 \mu}{2\pi(x^2+a^2)^{\frac{3}{2}}} $$
+
+    \begin{remark}
+        For there to be any magnetic field the field point must be enclosed by a current, hence the space in-between the loopings has a magnetic field but the area outside or further inside does not, same applies for toroidal solenoids.
+    \end{remark}
 \end{definition}
 
 \subsection*{28.6 Ampere's Law}:
