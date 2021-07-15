@@ -158,8 +158,110 @@ The central principle of electromagnetic induction is Faraday’s law. This law 
     \end{enumerate}
 \end{definition}
 
+\section*{30 Inductance}
+A changing current in a coil induces an emf in an adjacent coil. The coupling between the coils is described by their \textit{mutual inductance}. A changing current in a coil also induces an emf in that same coil. Such a coil is called an \textit{inductor}, and the relationship of current to emf is described by the \textit{inductance} (also called self- inductance) of the coil. If a coil is initially carrying a current, energy is released when the current decreases; this principle is used in automotive ignition systems.
+
+\subsection*{30.1 Mutual Inductance}
+
+\begin{definition}
+    \textbf{Mutual Inductance ($M$)}:
+    When an emf is produced in a coil because of the change in current in a coupled coil , the effect is called mutual inductance. Can be described as:
+    \begin{center}
+        $\mathcal{E}_2 = -M\frac{di_1}{dt}$ and $\mathcal{E}_1 = -M\frac{di_2}{dt}$ 
+    \end{center}
+    where each emf is the negative of the rate of change of current in the other coil times the mutual inductance. 
+
+    M itself can be described using lenz's law as $$M = \frac{N_2 \Phi_{b2}}{i_1} = \frac{N_1\Phi_{B1}}{i_2}$$ 
+
+    The unit of mutual inductance is called the henry 
+    \begin{center}
+        (1$H$ = 1$Wb/A$ = 1$V\cdot s/A$ = 1$\Omega \cdot s$ = 1$J/A^2$)
+    \end{center}
+    
+\end{definition}
+
+\subsection*{30.2 Self-Inductance and Inductors}
+
+\begin{definition}
+    \textbf{Self-induced emf}:
+    Any circuit that carries a varying current has an emf induced in it by the variation in its own magnetic field. Such an emf is called a self-induced emf.
+\end{definition}
+
+\begin{definition}
+    \textbf{Inductance/Self-Inductance($L$)}:
+    Self-induced emfs can occur in any circuit so long as there is variable current. The effect of self-inductance is magnified if the circuit includes a coil. For this there is the relation:
+    $$L = \frac{N\Phi_B}{i}$$ where $i$ is the current in the coil and $\Phi_B$ is the flux due to the current through each turn of the coil.
+    \begin{remark}
+        This relationship can be conbined with Faraday's law resulting in:
+        $$\mathcal{E} = -L\frac{di}{dt}$$ where $L$ is the inductance of the circuit.
+    \end{remark}
+\end{definition}
+
+\begin{definition}
+    \textbf{Inductor/Choke}:
+    Circuit device that is designed to have a particular inductance.
+\end{definition}
+
+\subsection*{30.3 Magnetic-Field Energy}
+
+\begin{definition}
+    \textbf{Total Energy in Inductor}:
+    We can find the change in energy as the change in Power.
+    $$U = L\int^I_0idt = .5LI^2$$ where I is final current and i is the instantaneous current.
+    \begin{remark}
+        This equation can be expanded for toiroidal solenoids where $L = \frac{\mu_0N^2A}{2\pi r}$ which results in $$U = .5LI^2 = .5\frac{\mu_0N^2A}{2\pi r}I^2$$
+    \end{remark}
+\end{definition}
+
+\begin{definition}
+    \textbf{Magnetic Energy Density($u$)}:
+    The magnetic analog of energy per unit volume in an electric field in vacuum,$u=.5\epsilon_0E^2$. For Magnetism the equation is: 
+    $$u = \frac{B^2}{2\mu_0}$$
+    \begin{remark}
+        If the material inside the toroid is not vacuum but a material we can use its magnetic permeability$\mu = K_m\mu_0$ and replace the above equation with $$U = \frac{B^2}{2\mu}$$
+    \end{remark} 
+\end{definition}
+
+\subsection*{30.4 the R-L Circuit}
+
+\begin{definition}
+    \textbf{R-L Circuit}:
+    A circuit that includes both a resistor and an inductor, and possibly a source of emf.The resistor R may be a separate circuit element, or it may be the resistance of the inductor windings.
+    \begin{remark}
+        For an R-L circuit the time constant $\tau = \frac{L}{R}$ where current increases and drops exponentially. 
+    \end{remark}
+\end{definition}
+
+\subsection*{30.5 The L-C Circuit}
+
+\begin{definition}
+    \textbf{L-C Circuit}:
+    A circuit that contains inductance L and capacitance C undergoes electrical oscillations with an angular frequency $\omega$ that depends on L and C.
+\end{definition}
+
+\begin{definition}
+    \textbf{Angular Frquency of Oscillation in an L-C circuit}:
+    $$\omega = \sqrt{\frac{1}{LC}}$$ 
+    \begin{remark}
+        This is analogous to a mechanical harmonic oscillator, with inductance L analogous to mass m, the reciprocal of capacitance 1/C to force constant k, charge q to displacementx, and current i to velocity $v_x$
+    \end{remark}
+\end{definition}
 
 
+\subsection*{30.6 L-R-C Circuits}
+
+\begin{definition}
+    \textbf{L-R-C Circuit}:
+    A circuit that contains inductance, resistance, and capacitance undergoes damped oscillations for sufficiently small resistance.
+\end{definition}
 
 
+\begin{definition}
+    \textbf{Angular Frquency of Oscillation in underdamped L-R-CC circuits}:
+    For underdamped oscillations in an L-R-C circuits the angular frequency can be described as $$\omega' = \sqrt{\frac{1}{LC} - \frac{R^2}{4L^2}}$$
+
+    \begin{remark}
+        The frequency $\omega'$ of damped oscillations depends on the values of L, R, and C. As R increases, the damping increases; if R is greater than a certain value, the behavior becomes overdamped and no longer oscillates. 
+    \end{remark}
+\end{definition}
 \end{document}
