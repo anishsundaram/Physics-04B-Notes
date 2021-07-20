@@ -238,9 +238,156 @@ In this chapter we will learn how resistors, inductors, and capacitors behave in
         \begin{remark}
             The Efficiency of a Transformer can be found by the following:
             $$\frac{P_1}{P_2} * 100$$ where $P_1$ is initial power for the
-            primary coil and $P_2$ is the power of the secondary coil.P
+            primary coil and $P_2$ is the power of the secondary coil.
         
         \end{remark}
     \end{definition}
+
+
+\section*{32 Electromagnetic Waves}
+Maxwell’s equations show that a time-varying magnetic field acts as a source of electric field and that a time-varying electric field acts as a source of magnetic field. These $\vec{E}$ and $\vec{B}$ fields can sustain each other, forming an \textit{electromagnetic wave} that propagates through space. Visible light is one example of an electromagnetic wave; other kinds are produced by wi-fi base stations, x-ray machines, and radioactive nuclei.
+
+\subsection*{32.1 Maxwell's Equations and Electromagnetic Waves}
+
+\begin{definition}
+    \textbf{Electromagnetic Wave/ Electromagnetic Radiation}:
+    When either an electric or a magnetic field is changing with time, a field of the other kind is induced in adjacent regions of space as shown by Ampere's Law. This disturbance of time-varying electric and magnetic fields that can propagate through space from one region to another have the properties of a wave, an EM wave.
+    \begin{remark}
+        An EM wave can travel even when there is no matter in the intervening region.
+    \end{remark}
+\end{definition}
+
+\begin{definition}
+    \textbf{Maxwell's Equations}:
+    The Complete versions of previous equations
+    \begin{enumerate}
+        \item Gauss's Law for $\vec{E}$: $$\oint \vec{E} \cdot d\vec{A} = \frac{Q_{encl}}{\epsilon_0}$$ 
+        \item Gauss's Law for $\vec{B}$: $$\oint \vec{B} \cdot d\vec{A} = 0$$
+        \item Farada's Law for stationary integration path:$$\oint \vec{E} \cdot d\vec{l} = -\frac{d\Phi_B}{dt}$$  
+        \item Ampere’s law for a stationary integration path:
+        $$\oint \vec{B} \cdot d\vec{l} = \mu_0 (i_c + \epsilon_0\frac{d\Phi_E}{dt})encl$$ where $i_c$ is the conduction current through the path.
+    \end{enumerate}
+\end{definition}
+
+\begin{definition}
+    \textbf{EM Spectrum}:
+    The length of EM waves of all frequencies and wavelengths, ranging from Radio and Tv waves on the high end of wavelength to Gamma rays on the low end.
+    \begin{remark}
+        Recall that the equation relating Wavelength, Frequency, and velocity is $$v = f\lambda$$ where in a vacuum all waves have the same propagation speed $$c = 299,792,458 m/s = 3*10^8 m/s$$
+    \end{remark}
+\end{definition}
+
+\subsection*{32.2 Plane EM Waves and the Speed of Light}
+
+
+
+\begin{definition}
+    \textbf{Plane Wave}:
+    A physical quantity whose fields are constant over any plane that is perpendicular to the direction of propagation. The relation between the speed of such a wave and the resulting $\vec{B}$ and $\vec{E}$ fields can be found by the equation 
+    $$E = cB$$ where $c$ is the speed of light in vacuum mentioned above.
+    However, this relation only holds if E and B are related in some manner, additional methods to calculated $\vec{B}$ and $c$ are as follows:
+    $$B - \epsilon_0\mu_0cE$$ and $$c = \frac{1}{\sqrt{\epsilon_0\mu_0}}$$
+    of which $\epsilon_0$ and $\mu_0$ are the electric and magnetic constants respectively.
+    \begin{remark}
+        To satisfy Maxwell's equations any wave discussed must be a \textbf{Transverse wave}, which is a wave whose oscillations are perpendicular to the direction of the wave's advance. This is in contrast to a \textbf{longitudinal wave} which travels in the direction of its oscillations.
+    \end{remark}
+\end{definition}
+
+\begin{definition}
+    \textbf{Key Properties of EM Waves:}
+    \begin{enumerate}
+        \item The wave is transverse; The direction of propagation is the direction of the vector product $\vec{E} \times \vec{B}$
+        \item There is a definite ratio between the magnitudes of $\vec{E}$  and $\vec{B}$: $E = cB$.
+        \item The wave travels in vacuum with a definite and uniform speed.
+        \item Electromagnetic waves require no medium.
+    \end{enumerate}
+\end{definition}
+
+\subsection*{32.3 Sinusoidal EM Waves}
+
+\begin{definition}
+    \textbf{Wave Functions in vacuum}:
+    The functions to map the movement of the sinusoidal fields of EM plane waves propogating in the \textbf{+x} direction are as follows:
+    $$\vec{E}(x,t) = \hat{j}E_{max}cos(kx-\omega t)$$
+    and 
+    $$\vec{B}(x,t) = \hat{k}B_{max}cos(kx-\omega t)$$
+    where for both $k$ is the wave number and $\omega$ is the angular frequency.
+    \begin{remark}
+        Eaves propagating in the \textbf{-x} direction are as follows:
+        $$\vec{E}(x,t) = \hat{j}E_{max}cos(kx+\omega t)$$
+    and 
+    $$\vec{B}(x,t) = -\hat{k}B_{max}cos(kx+\omega t)$$ 
+    \end{remark}
+\end{definition}
+
+\subsubsection*{32.3.1 EM waves in Matter}
+
+\begin{definition}
+    \textbf{Speed of EM in Dialectric}:
+    Although matter is not necessary for travel, it does impact speed. The new equation is as follows:
+    $$v = \frac{1}{\sqrt{\epsilon\mu}} = \frac{1}{\sqrt{KK_m}}\frac{1}{\sqrt{\epsilon_0\mu_0}} = \frac{c}{\sqrt{KK_m}}$$
+    wherein $\epsilon$ and $\mu$ are the permeability and permitivity and $K$ is the Dialectric constant and $K_m$ is relative permeability.$c$ is the speed of light in vacuum.
+    \begin{remark}
+        Because we are no longer in a vacuum $\mu_0$ must be replaced by $\mu = K_m\mu_0$ and thereby $E = vb$ and $B=\epsilon\mu vE$
+    \end{remark}
+\end{definition}
+
+\begin{definition}
+    \textbf{Index of Refraction}:
+    The ratio of the speed $c$ in a material versus speed $v$ in vacuum:$$\frac{c}{v} = n = \sqrt{KK_m}$$
+\end{definition}
+
+\subsection*{32.4 Energy and Momentum in EM Waves}
+
+\begin{definition}
+    \textbf{Ponyting Vector($\vec{S})$}:
+    A vector quantity that describes both the magnitude adn direction of the energy flow rate. Found by the equation
+    $$\vec{S}=\frac{1}{\mu_0}\vec{E}\times\vec{B}$$
+\end{definition}
+
+\begin{definition}
+    \textbf{Intensity}:
+    Wave intensity is the average power that travels through a given area as the wave travels through space. The intensity of a sinusoidal EM wave in vacuum is 
+    $$I = S_{av} = \frac{E_{max}B_{max}}{2\mu_0} = \frac{E_{max}^2}{2\mu_0c} = .5\sqrt{\frac{\epsilon_0}{\mu_0}}E_{max}^2 = 
+    .5\epsilon_0cE_{max{^2}}$$ where $S_{av}$ is the magnitude of average Poynting vector.
+\end{definition}
+
+\subsubsection*{32.4.1 EM Momentum Flow and Radiation Pressure}
+
+\begin{definition}
+    \textbf{Flow rate of EM Momentum}:
+    We’ve shown that electromagnetic waves transport energy. It can also be shown that electromagnetic waves carry momentum p. This Momemntum can be described by $$\frac{dp}{dV} = \frac{EB}{\mu_0c^2} = \frac{S}{c^2}$$ This omementum has a corresponding flow rate which can be described by 
+    $$\frac{1}{A}\frac{dp}{dt} = \frac{S}{c} = \frac{EB}{\mu_0c}$$ where $\frac{1}{A}\frac{dp}{dt} $ is the Momentum transfered per unit surface area per unit time.
+\end{definition}
+
+\begin{definition}
+    \textbf{Radiation Pressure}:
+    Radiation pressure is the mechanical pressure exerted upon any surface due to the exchange of momentum between the object and the electromagnetic field. This includes the momentum of light or electromagnetic radiation of any wavelength that is absorbed, reflected, or otherwise emitted by matter on any scale. 
+    $$\rho_{rad} = \frac{S_{av}}{c} = \frac{I}{c}$$ where $I$ is intensity for a wave totally absorbed and $$\rho_{rad} = \frac{2S_{av}}{c} = \frac{2I}{c}$$ for a wave totally reflected
+\end{definition}
+
+\subsection*{32.5 Standing EM Waves}
+
+\begin{definition}
+    \textbf{Standing Wave}:
+    A Standing Wave is a wave which oscillates in time but whose peak amplitude profile does not move in space. The peak amplitude of the wave oscillations at any point in space is constant with time, and the oscillations at different points throughout the wave are in phase.
+\end{definition}
+
+\begin{definition}
+    \textbf{Nodal Planes}:
+    A node is a point along a standing wave where the wave has minimum amplitude.
+    \begin{remark}
+        \begin{enumerate}
+            \item The Nodal Planes of $\vec{E}$ are $$x = 0, \frac{\lambda}{2}, \lambda, 
+            \frac{3\lambda}{2},...$$
+            \item The Nodal Planes of $\vec{B}$ are $$x = \frac{\lambda}{4}, \frac{3\lambda}{4},
+            \frac{5\lambda}{4},...$$
+        \end{enumerate}
+        
+    \end{remark}
+\end{definition}
+
+
+
 
 \end{document}
