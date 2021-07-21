@@ -125,7 +125,7 @@ In this chapter we will learn how resistors, inductors, and capacitors behave in
     Because it is dificult to measure alternating current in a Galvanometer we can use Recitified Average Current instead to measure. It can be computed by averaging the absolute value of a waveform over one full period of the waveform. or put into an equation as $$I_{rav} = \frac{2}{\pi}I = .637I$$ where $I$ is the current amplitude.
 \end{definition}
 
-\subsubsection*{31.1.3 Root-Mean-Squear(rms) Values}
+\subsubsection*{31.1.3 Root-Mean-Square(rms) Values}
 
 \begin{definition}
     \textbf{RMS Current and Voltage}:
@@ -367,23 +367,44 @@ Maxwell’s equations show that a time-varying magnetic field acts as a source o
 \subsection*{32.4 Energy and Momentum in EM Waves}
 
 \begin{definition}
-    \textbf{Ponyting Vector($\vec{S})$}:
-    A vector quantity that describes both the magnitude adn direction of the energy flow rate. Found by the equation
-    $$\vec{S}=\frac{1}{\mu_0}\vec{E}\times\vec{B}$$
+    \textbf{Energy Density and Energy Absorbed}:
+    The energy density of an Electric field can be found by the eqaution $$u_E = .5\epsilon_0E^2$$
+    and the equation for the energy density of a Magnetic Field can be found by $$u_B = \frac{B^2}{2\mu_0}$$
+    Thus the total energy density for a AM wave in vacuum is $$u =5\epsilon_0E^2 + \frac{B^2}{2\mu_0}$$ but because $u_E$ = $u_B$ the equation is simplified to $$u=\epsilon_0E^2$$
+    \begin{remark}
+        The total amount of energy absorbed by a surface can be found from the equation
+        $$\Delta U = \epsilon_0cE^2At$$
+    \end{remark}
+\end{definition}
+
+\subsubsection*{32.4.1 The Poynting Vector, Power, and Intensity}
+\begin{definition}
+    \textbf{Poynting Vector($\vec{S})$}:
+    A vector quantity that describes both the magnitude and direction of the energy flow rate. Found by the equation
+    $$\vec{S}=\frac{1}{\mu_0}\vec{E}\times\vec{B}$$ where the magnitude $$S = EB/\mu_0 =\frac{dU}{Adt} =\sqrt{\frac{\epsilon_0}{\mu_0}}E^2 = \epsilon_0CE^2$$ in a vacuum where the unit is $W/m^2$ 
+    \begin{remark}
+        The Average Poynting vector magnitude can be found by using $E_{rms}$ or by dividing the peak Poynting Vector magnitudeby 2.
+    \end{remark}
+\end{definition}
+
+\begin{definition}
+    \textbf{Power}:
+    The total energy flow per unit time (power, P) out of any closed surface is the integral of S over the surface:
+    $$P = \frac{\Delta U}{\Delta t} = \oint\vec{S}\cdot d\vec{A} $$
 \end{definition}
 
 \begin{definition}
     \textbf{Intensity}:
     Wave intensity is the average power that travels through a given area as the wave travels through space. The intensity of a sinusoidal EM wave in vacuum is 
     $$I = S_{av} = \frac{E_{max}B_{max}}{2\mu_0} = \frac{E_{max}^2}{2\mu_0c} = .5\sqrt{\frac{\epsilon_0}{\mu_0}}E_{max}^2 = 
-    .5\epsilon_0cE_{max{^2}}$$ where $S_{av}$ is the magnitude of average Poynting vector.
+    .5\epsilon_0cE_{max{^2}}$$ where $S_{av}$ is the magnitude of average Poynting vector. Units are $W/m^2$
 \end{definition}
 
-\subsubsection*{32.4.1 EM Momentum Flow and Radiation Pressure}
+\subsubsection*{32.4.2 EM Momentum Flow and Radiation Pressure}
 
 \begin{definition}
     \textbf{Flow rate of EM Momentum}:
-    We’ve shown that electromagnetic waves transport energy. It can also be shown that electromagnetic waves carry momentum p. This Momemntum can be described by $$\frac{dp}{dV} = \frac{EB}{\mu_0c^2} = \frac{S}{c^2}$$ This omementum has a corresponding flow rate which can be described by 
+    We’ve shown that electromagnetic waves transport energy. It can also be shown that electromagnetic waves carry momentum $p$. This Momemntum can be described by $$\frac{dp}{dV} = \frac{EB}{\mu_0c^2} = \frac{S}{c^2}$$ This momementum has a corresponding flow rate which can be described by 
     $$\frac{1}{A}\frac{dp}{dt} = \frac{S}{c} = \frac{EB}{\mu_0c}$$ where $\frac{1}{A}\frac{dp}{dt} $ is the Momentum transfered per unit surface area per unit time.
 \end{definition}
 
